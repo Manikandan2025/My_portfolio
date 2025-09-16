@@ -1,0 +1,36 @@
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+ 
+   
+}
+.logo{
+    width:100px;
+
+}
+.navbar > .navmenu{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    gap:60px;
+    font-size: 20px;
+    font-family: 'outfit';
+
+}
+.navbar > .nav-connect{
+    padding:20px 20px;
+
+    border-radius:50px;
+    background:linear-gradient(to right, #ff7e5f, #feb47b);
+    font-size: 22px;
+    font-family: 'outfit';
+    cursor: pointer;
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
