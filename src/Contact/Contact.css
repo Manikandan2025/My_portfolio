@@ -88,3 +88,20 @@
   transform: scale(1.05);
   transition: 0.4s;
 }
+
+@media(max-width:768px){
+  .contact{
+      margin: 90px 120px;
+      width: 100%;;
+    
+  }
+  .contact-section{
+      flex-direction: column;
+      gap: 50px;
+  }
+  .contact-right input{
+      width: 100%;
+  }
+  .contact-right textarea{
+      width: 100%;
+  } }

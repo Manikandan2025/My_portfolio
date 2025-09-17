@@ -1,6 +1,9 @@
 import "./Contact.css";
 import React from "react";
-
+import email from "../assets/envelope-solid-full.svg";
+import phone from "../assets/phone-volume-solid-full.svg";
+import location from "../assets/location-dot-solid-full.svg";
+import contact from "../assets/contact.png";
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -31,7 +34,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contact-title">
-        <img src="src\assets\contact.png" alt="" />
+        <img src={contact} alt="" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -40,7 +43,7 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <img
-                src="src\assets\envelope-solid-full.svg"
+                src={email}
                 width={"50px"}
                 alt=""
               />
@@ -48,7 +51,7 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img
-                src="src\assets\phone-volume-solid-full.svg"
+                src={phone}
                 width={"50px"}
                 alt=""
               />
@@ -56,7 +59,7 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img
-                src="src\assets\location-dot-solid-full.svg"
+                src={location}
                 width={"50px"}
                 alt=""
               />

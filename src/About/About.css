@@ -60,3 +60,15 @@
     border-radius: 50px;
     background: linear-gradient(230deg, #f5b7b1, #f1948a);
 }
+@media(max-width:768px){
+  .about{
+    margin: 0 120px;
+    width:100%;
+  
+  }
+  .about-section{
+    flex-direction: column;
+    align-items: center;;
+  }
+
+}

@@ -8,7 +8,7 @@ const Me = () => {
     <div className="me">
       <img className="profile" src={profile} alt="" width={"150px"} />
       <h1>
-        <span> I'm Manikandan M,</span>
+        <span> I'm Manikandan M, </span>
         an aspiring Software Developer.
       </h1>
       <p>

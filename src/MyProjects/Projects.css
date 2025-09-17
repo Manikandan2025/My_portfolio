@@ -43,3 +43,19 @@
   transition: 0.4s;
 } 
 
+@media(max-width:768px){
+  .projects{
+      margin: 90px 120px;
+      width: 100%;;
+    
+  }
+  .project-list{
+      flex-direction: column;
+      gap: 50px;
+  }
+  .project{
+      width: 90%;
+      height: auto;
+  }
+ 
+}
