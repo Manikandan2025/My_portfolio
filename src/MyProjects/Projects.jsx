@@ -8,7 +8,7 @@ import project3 from '../assets/businessContract.png'
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="project">
       <div className="project-title">
         <img src={image} alt="" />
       </div>

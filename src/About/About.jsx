@@ -5,7 +5,7 @@ import profile from "../assets/Manipic2.jpeg"; // Assuming you have a profile im
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className="about-title">
 
           <img src={Aboutme} alt="Aboutme" width="400px" />

@@ -1,36 +1,69 @@
-.navbar{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 100px;
- 
-   
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 100px;
+  gap: 50px;
 }
-.logo{
-    width:100px;
-
+.logo {
+  width: 100px;
 }
-.navbar > .navmenu{
-    display:flex;
-    align-items: center;
-    list-style: none;
-    gap:60px;
-    font-size: 20px;
-    font-family: 'outfit';
-
+.navbar > .navmenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  font-family: "outfit";
 }
-.navbar > .nav-connect{
-    padding:20px 20px;
+.navbar > .nav-connect {
+  padding: 20px 20px;
 
-    border-radius:50px;
-    background:linear-gradient(to right, #ff7e5f, #feb47b);
-    font-size: 22px;
-    font-family: 'outfit';
-    cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  font-size: 22px;
+  font-family: "outfit";
+  cursor: pointer;
+}
+.nav-connect:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+.anchor-link{
+  text-decoration: none;
+  color: #000;
 }
 
-.nav-connect:hover{
-    transform: scale(1.05);
-    transition: transform 0.5s ease;
+
+.navmenu > li {
+ display: flex;
+ flex-direction: column;
+ cursor: pointer;
+ gap:5px;
+}
+.navmenu > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.navmenu > li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* adjust gap below text */
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(230deg, #f5b7b1, #f1948a);
+  transition: transform 0.4s ease;
+  border-radius: 2px;
+}
+
+.navmenu > li.active::after {
+  transform: translateX(-50%) scaleX(1);
+
 }
